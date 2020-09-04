@@ -1,0 +1,42 @@
+.Header {
+  color: #fff;
+  justify-content: center;
+}
+
+.dFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.link {
+  align-items: flex-start;
+  position: relative;
+}
+
+.online {
+  left: -5px;
+  background-color: #2dc100;
+  position: absolute;
+  top: -5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+}
+
+.offline {
+  display: none;
+}
+
+.devider {
+  margin-bottom: 0;
+}
+
+.headinBlock {
+  text-align: left;
+  width: 56%;
+}
+
+.dots span {
+  letter-spacing: 2px;
+}
