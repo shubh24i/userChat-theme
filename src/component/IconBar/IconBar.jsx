@@ -1,13 +1,22 @@
 import React from "react";
 
-import wIcon from "../../assets/images/w-icon.png";
+/* import wIcon from "../../assets/images/w-icon.png";
 import fbIcon from "../../assets/images/fb-icon.png";
 import vIcon from "../../assets/images/v-icon.png";
 import sIcon from "../../assets/images/s-icon.png";
-import nIcon from "../../assets/images/n-icon.png";
+import nIcon from "../../assets/images/n-icon.png"; */
 import styles from "./IconBar.module.css";
 
+import Image from "./../utill/Image";
+
 const IconBar = (props) => {
+  const icons = [
+    { name: "whatsup", avatar: "w-icon.png", url: "#link" },
+    { name: "facebook", avatar: "fb-icon.png", url: "#link" },
+    { name: "v", avatar: "v-icon.png", url: "#link" },
+    { name: "skype", avatar: "s-icon.png", url: "#link" },
+    { name: "n", avatar: "n-icon.png", url: "#link" },
+  ];
   const activeClass = (e) => {
     e.target.classList.toggle(styles.active);
   };
@@ -34,21 +43,14 @@ const IconBar = (props) => {
         </svg>
       </div>
       <div className={styles.icoList}>
-        <a href="#link">
-          <img src={wIcon} alt="whatsup" />
-        </a>
-        <a href="#link" className={styles.active}>
-          <img src={fbIcon} alt="facebook" />
-        </a>
-        <a href="#link">
-          <img src={vIcon} alt="v" />
-        </a>
-        <a href="#link">
-          <img src={sIcon} alt="skype" />
-        </a>
-        <a href="#link">
-          <img src={nIcon} alt="n" />
-        </a>
+        {icons.map((icon) => (
+          <a href={icon.url}>
+            <Image
+              source={require(`../../assets/images/${icon.avatar}`)}
+              altName={icon.name}
+            />
+          </a>
+        ))}
       </div>
     </div>
   );

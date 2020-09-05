@@ -31,7 +31,7 @@
   },
 
   {
-    "userId": "101",
+    "userId": 101,
     "text": "Haha awesome, I think I know the album your looking. for.",
     "chatType": "in",
     "time": "12:43"

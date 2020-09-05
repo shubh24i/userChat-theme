@@ -13,8 +13,16 @@ import chats from "../../data/chat.json";
 import styles from "./UserChat.module.css";
 import ChatBoxIn from "./ChatBoxIn/ChatBoxIn";
 const users = [
-  { userId: 100, name: "Kirsten Mckellar", avatar: chatUserF },
-  { userId: 101, name: "Rojar", avatar: chatUserM },
+  {
+    userId: 100,
+    name: "Kirsten Mckellar",
+    avatar: "chatUserF.png",
+  },
+  {
+    userId: 101,
+    name: "Rojar",
+    avatar: "chatUserM.png",
+  },
 ];
 
 const UserChat = () => {
@@ -43,17 +51,19 @@ const UserChat = () => {
       </div>
       <div className={styles.chatBotWrapper}>
         {chats.map((chat, i) => {
-          let name, avatar;
-          if (chat.userId === 100) {
-            name = users[0].name;
-            avatar = users[0].avatar;
-          } else {
-            name = users[1].name;
-            avatar = users[1].avatar;
-          }
-          const newChat = { ...chat, name: name, avatar: avatar };
+          const usersList = users.find((user) => {
+            return chat.userId === user.userId;
+          });
 
-          if (chat.userId === 100) {
+          let newChat = "";
+          if (usersList !== undefined) {
+            newChat = {
+              ...chat,
+              name: usersList.name,
+              avatar: usersList.avatar,
+            };
+          }
+          if (chat.chatType === "out") {
             return <ChatBoxOut key={i} chat={newChat} />;
           } else {
             return <ChatBoxIn key={i} chat={newChat} />;

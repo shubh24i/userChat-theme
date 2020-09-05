@@ -1,6 +1,6 @@
 import React from "react";
 
-import UserIcon from "../../assets/images/inbox.png";
+import Image from "./../utill/Image";
 import styles from "./inbox.module.css";
 
 const Inbox = () => {
@@ -9,7 +9,10 @@ const Inbox = () => {
       <div className={[styles.Header, styles.dFlex, styles.mb30].join(" ")}>
         <h2>Inbox</h2>
         <span className={styles.userIconCircel}>
-          <img src={UserIcon} alt="user" />
+          <Image
+            source={require(`../../assets/images/inbox.png`)}
+            altName="user"
+          />
         </span>
       </div>
       <ul className={styles.devider}>

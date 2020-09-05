@@ -1,5 +1,7 @@
 import React from "react";
 
+import Image from "./../../utill/Image";
+
 import styles from "./UserListItem.module.css";
 
 const UserListItem = (props) => {
@@ -10,7 +12,11 @@ const UserListItem = (props) => {
         className={[styles.dFlex, styles.link].join(" ")}
       >
         <span className={styles[props.user.status]}></span>
-        <img className={styles.devider} src={props.user.avatar} alt="user" />
+        <Image
+          classes={styles.devider}
+          source={require(`../../../assets/images/${props.user.avatar}`)}
+          altName="user"
+        />
         <div className={styles.headinBlock}>
           <h3>{props.user.userName}</h3>
           <span>{props.user.chat}</span>

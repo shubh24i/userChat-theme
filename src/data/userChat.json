@@ -4,41 +4,47 @@
     "chat": "Thanks again you have been...",
     "time": "5 min",
     "status": "offline",
-    "url": "/Matt-Thompson"
+    "url": "/Matt-Thompson",
+    "avatar": "userImg1.png"
   },
   {
     "userName": "Claire Sharwood",
     "chat": "My selfie game is lacking can...",
     "time": "10 min",
     "status": "offline",
-    "url": "/Claire-Sharwood"
+    "url": "/Claire-Sharwood",
+    "avatar": "userImg2.png"
   },
   {
     "userName": "Kirsten Mckellar",
     "chat": "Where is the nearest place to...",
     "time": "2 min",
     "status": "online",
-    "url": "/Kirsten-Mckellar"
+    "url": "/Kirsten-Mckellar",
+    "avatar": "userImg3.png"
   },
   {
     "userName": "Shaun Gardner",
     "chat": "Ok that sounds perfect",
     "time": "30 min",
     "status": "offline",
-    "url": "/Shaun-Gardner"
+    "url": "/Shaun-Gardner",
+    "avatar": "userImg4.png"
   },
   {
     "userName": "Mace Windu",
     "chat": "Protect the senator at all costs.",
     "time": "38 min",
     "status": "offline",
-    "url": "/Mace-Windu"
+    "url": "/Mace-Windu",
+    "avatar": "userImg5.png"
   },
   {
     "userName": "Kayne West",
     "chat": "So tell the voice inside your...",
     "time": "49 min",
     "status": "offline",
-    "url": "/Kayne-West"
+    "url": "/Kayne-West",
+    "avatar": "userImg6.png"
   }
 ]

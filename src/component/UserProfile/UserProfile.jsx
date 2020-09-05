@@ -1,8 +1,6 @@
 import React from "react";
 
-import bell from "../../assets/images/bell.png";
-import profile from "../../assets/images/profile.png";
-import fbIcon from "../../assets/images/fbm.png";
+import Image from "./../utill/Image";
 import styles from "./UserProfile.module.css";
 
 const UserProfile = () => {
@@ -18,17 +16,28 @@ const UserProfile = () => {
         ].join(" ")}
       >
         <span className={styles.notification}></span>
-        <img src={bell} alt="notification" />
+
+        <Image
+          source={require(`../../assets/images/bell.png`)}
+          altName="notification"
+        />
         <span className={styles.userName}>Matt Thompson</span>
       </div>
       <div className={[styles.userPicBlock, styles.devider].join(" ")}>
         <div className={styles.topRowIcon}>
           <span className={styles.dots}>
-            <img src={fbIcon} alt="icon" />
+            <Image
+              source={require(`../../assets/images/fbm.png`)}
+              altName="facebook"
+            />
             <a href="#link">...</a>
           </span>
         </div>
-        <img src={profile} alt="user pic" />
+
+        <Image
+          source={require(`../../assets/images/profile.png`)}
+          altName="profile"
+        />
         <h2>Kirsten Mckellar</h2>
         <span>Cape Town, RSA</span>
       </div>

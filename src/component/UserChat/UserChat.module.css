@@ -118,6 +118,7 @@
   font-size: 12px;
   border-radius: 5px;
   margin-top: 10px;
+  color: #fff;
 }
 .bigCard {
   align-items: flex-start;
@@ -135,6 +136,7 @@
   outline: 0;
   padding-left: 60px;
   padding-right: 60px;
+  border: none;
 }
 .sendInptWraper input {
   background-image: url("../../assets/images/pin.png"),
